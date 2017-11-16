@@ -29,7 +29,6 @@ def maxSample(sound):
   largest = 0
   for s in getSamples(sound):
     largest = max(largest,getSample(s))
-  factor = 32767.0 / largest
   return largest
 
 def maxVolume(sound):
